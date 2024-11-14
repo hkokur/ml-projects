@@ -59,6 +59,9 @@ for feature_key in featurs_count.keys():
         # Concatenate the current probabilities DataFrame with the main likelihoods_prob DataFrame
         likehoods_prob = pd.concat([likehoods_prob, current_prob], ignore_index=True)
 
+print(prior_prob.head(100))
+print(likehoods_prob.head(100))
+
 
 # prediction function
 def prediction(instance, prior_prob, likehoods_prob):
